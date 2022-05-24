@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='text'>Pure Components</h1>
+      <p className='text'>A React component is considered pure if it renders the same output for the same state and props.In the case of Pure Components, the React components do not re-render blindly without considering the updated values of React “props” and “state”. If updated values are the same as previous values, render is not triggered.</p>
+      <h1 className='text'>High order Components</h1>
+      <p className='text'> A higher-order component is a function that takes a component and returns a new component. <br /> <br /> Example:</p>
+      <p style={{color: 'yellow', fontWeight:'bold',fontSize:'24px'}}>const EnhancedComponent = higherOrderComponent(WrappedComponent);</p>
+    
     </div>
   );
 }
